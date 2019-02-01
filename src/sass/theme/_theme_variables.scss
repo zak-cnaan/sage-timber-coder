@@ -1,0 +1,107 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&subset=hebrew');
+
+// $primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
+
+// @import "custom-vars/cerulean/variables";
+// @import "custom-vars/cosmo/variables";
+// @import "custom-vars/cyborg/variables";
+ //@import "custom-vars/darkly/variables";
+//@import "custom-vars/flatly/variables";
+// @import "custom-vars/journal/variables";
+//3 @import "custom-vars/litera/variables";
+//3@import "custom-vars/lumen/variables";
+// @import "custom-vars/lux/variables";
+//3 @import "custom-vars/materia/variables";
+//@import "custom-vars/minty/variables";
+ //@import "custom-vars/pulse/variables";
+//3 @import "custom-vars/sandstone/variables";
+//@import "custom-vars/simplex/variables";
+// @import "custom-vars/sketchy/variables";
+// @import "custom-vars/slate/variables";
+// @import "custom-vars/solar/variables";
+//@import "custom-vars/spacelab/variables";
+// @import "custom-vars/superhero/variables";
+//@import "custom-vars/united/variables";
+@import "custom-vars/yeti/variables";
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+ $font-family-sans-serif:      'Rubik', sans-serif, "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+// $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+ //$font-family-base:            $font-family-sans-serif !default;
+// // stylelint-enable value-keyword-case
+
+// $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+// $font-size-lg:                ($font-size-base * 1.25) !default;
+// $font-size-sm:                ($font-size-base * .875) !default;
+
+// $font-weight-lighter:         lighter !default;
+// $font-weight-normal:          400 !default;
+// $font-weight-bold:            700 !default;
+// $font-weight-bolder:          bolder !default;
+
+$font-weight-light: 300;
+$font-weight-base: $font-weight-light;
+
+$font-weight-bold: 500;
+$font-weight-bolder: 700;
+$headings-font-weight: $font-weight-light;
+$line-height-base: 1.75;  
+
+$dark:#2B3750;
+// // $secondary:#303030;
+// $success:#015668;
+// // $danger:#FF304F;
+// $info:#0F81C7;
+// // $warning:#0DE2EA;
+// $light:#e8e8e8;
+// $dark:#000000;
+
+// $Herbie: "";
+// $primary:#083358;
+// $secondary:#F67280;
+// $success:#0074E4;
+// $danger:#FF4057;
+// $info:#74DBEF;
+// $warning:#FC3C3C;
+// $light:#F2F2F0;
+// $dark:#072247;
+
+
+// $Signal: "";
+// $primary:#FF304F;
+// $secondary:#CACACA;
+// $success:#015668;
+// $danger:#06648C;
+// $info:#0F81C7;
+// $warning:#0DE2EA;
+// $light:#ececec;
+// $dark:#222222;
+
+// $Fresca: "";
+// $primary:#07689F;
+// $secondary:#C9D6DF;
+// $success:#11D3BC;
+// $danger:#F67280;
+// $info:#A2D5F2;
+// $warning:#FF7E67;
+// $light:#FAFAFA;
+// $dark:#4e4e4e;
+
+// $primary: #235789;
+// $danger: #ED1C24;
+// $warning: #F1D302;
+// $success: #20BF55;
+// $info: #01BAEF;
+
+// $secondary:#E8F1F2;
+// $light: #FDFFFC;
+// $dark: #0A2342;
+
+// $link-color:$success;

@@ -1,0 +1,17 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    {% include 'blocks/page-header.twig' %}
+
+    {% if posts == [] %}
+        {{ __('Sorry, no results were found.', 'sage') }}
+    {% endif %}
+
+    {% for post in posts %}
+        {% include "templates/blocks/content.twig" with {post: post}  %}
+    {% endfor %}
+
+    {{ function('the_posts_navigation') }}
+
+{% endblock %}

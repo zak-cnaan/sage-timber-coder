@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    {% include 'blocks/page-header.twig' %}
+
+    {% for post in posts %}
+
+        {% include "blocks/content.twig" with {post: post}  %}
+
+    {% endfor %}
+
+{% endblock %}
+
