@@ -5,7 +5,7 @@
     {% include 'blocks/page-header.twig' %}
 
     {% if posts == [] %}
-        {{ __('Sorry, no results were found.', 'sage') }}
+        {{ function('pll__', 'Sorry, no results were found.', 'theme') }}
     {% endif %}
 
     {% for post in posts %}
