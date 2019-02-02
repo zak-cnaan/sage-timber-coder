@@ -18,7 +18,7 @@ function setup() {
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations
-  load_theme_textdomain('sage', get_template_directory() . '/lang');
+  //load_theme_textdomain('sage', get_template_directory() . '/lang');
 
   // Enable plugins to manage the document title
   // http://codex.wordpress.org/Function_Reference/add_theme_support#Title_Tag
@@ -141,3 +141,21 @@ function my_search_form( $form ) {
 }
 
 //add_filter( 'get_search_form', __NAMESPACE__ . '\\my_search_form', 100 );
+
+
+function dictionary() {
+  pll_register_string( 'Search for:', 'Search for:', 'theme' );
+  pll_register_string( 'Error locating', 'Error locating %s for inclusion', 'theme' );
+  pll_register_string( 'Continued', 'Continued', 'theme' );
+  pll_register_string( 'Latest Posts', 'Latest Posts', 'theme' );
+  pll_register_string( 'Search Results for', 'Search Results for %s', 'theme' );
+  pll_register_string( 'Not Found', 'Not Found', 'theme' );
+  pll_register_string( 'Return to Home page', 'Return to Home page', 'theme' );
+  pll_register_string( 'not exist', 'Sorry, but the page you were trying to view does not exist.', 'theme' );
+  pll_register_string( 'OOPS', 'OOPS', 'theme' );
+  pll_register_string( 'no results were found', 'Sorry, no results were found.', 'theme' );
+  
+
+}
+add_action('init', __NAMESPACE__ . '\\dictionary', 100);
+

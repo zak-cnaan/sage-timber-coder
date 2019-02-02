@@ -20,20 +20,28 @@
             {{ wp_link_pages }}
 
 <div>
-        <i class='far fa-folder text-primary'> Categories: </i>
+<span class='text-dark'>
+        <i class='fas fa-folder '></i>
+         {{__('Categories')}}: </span>
+
             {% for term in post.terms('category') %}
                 <a href='{{term.link}}' class='badge badge-primary'>
                     {{term.name}}</a>
             {% endfor %}
 </div>
+{% if post.terms('tags') %}
 <div>
-        <i class='far fa-edit text-primary'> Tags: </i>
+
+<span class='text-dark'>
+        <i class='fas fa-tags'></i>
+         {{__('Tags')}}: </span>
 
             {% for term in post.terms('tags') %}
                 <a href='{{term.link}}' class='badge badge-primary'>
                     {{term.name}}</a>
             {% endfor %}
             </div>
+            {% endif %}
         </footer>
     </article>
 {% endblock %}

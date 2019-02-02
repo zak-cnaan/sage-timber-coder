@@ -8,6 +8,6 @@
  * @subpackage  SageTimber
  * @since  SageTimber 0.1
  */
-
+__( 'Search for:', 'theme' );
 $context = Timber::get_context();
 Timber::render( 'pages/404.twig', $context );

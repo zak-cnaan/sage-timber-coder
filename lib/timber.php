@@ -1,5 +1,6 @@
 <?php
 use Roots\Sage\Setup;
+use Roots\Sage\Titles;
 
 // Check if Timber is not activated
 if ( ! class_exists( 'Timber' ) ) {
@@ -35,6 +36,13 @@ class SageTimberTheme extends TimberSite {
         /* Site info */
         $context['display_sidebar'] = Setup\display_sidebar();
         $context['sidebar_primary'] = Timber::get_widgets('sidebar-primary');
+
+        $context['the_title'] = Titles\title();
+
+
+//         $context['pll_e'] = TimberHelper::ob_function('pll_e');
+
+// $context['pll_'] = TimberHelper::function_wrapper('pll_');
 
         return $context;
     }

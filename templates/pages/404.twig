@@ -3,11 +3,11 @@
 {% block content %}
 <div id="not-found">
 <div class='jumbotron bg-warning text-dark'>
-<h1 class='display-4'>{{ __('OOPS', 'sage') }}</h1>
+<h1 class='display-4'>{{ function('pll__', 'OOPS', 'theme') }}</h1>
     <div class="h2">
-        {{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}
+        {{ function('pll__', 'Sorry, but the page you were trying to view does not exist.', 'theme') }}
     </div>
-    <a class='btn btn-dark' href='/'>{{ __('Return to Home page', 'sage') }}</a>
+    <a class='btn btn-dark' href='/'>{{ function('pll__', 'Return to Home page', 'theme') }}</a>
 </div>
 </div>
 

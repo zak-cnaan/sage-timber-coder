@@ -1,8 +1,8 @@
 <form action="/" class="searchform" id="searchform" method="get" role="search">
     <div class="input-group">
         <label class="sr-only" for="s">
-            {{ __( 'Search for:' ) }}</label>
-        <input class="form-control" id="s" name="s" placeholder="{{ __( 'Search for:' ) }}" type="text" value="{{function ('get_search_query')}}"/>
+            {{ function ('pll__', 'Search for:', 'theme')}}</label>
+        <input class="form-control" id="s" name="s" placeholder="{{ function ('pll__', 'Search for:', 'theme')}}" type="text" value="{{function ('get_search_query')}}"/>
         <span class="input-group-append">
             <button class="btn btn-primary" id="searchsubmit" type="submit">
                 <i class="fa fa-search"></i>
