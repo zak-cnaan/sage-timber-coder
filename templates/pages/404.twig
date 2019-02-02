@@ -1,10 +1,14 @@
 {% extends "base.twig" %}
 
 {% block content %}
-
-    <div class="alert alert-danger">
+<div id="not-found">
+<div class='jumbotron bg-warning text-dark'>
+<h1 class='display-4'>{{ __('OOPS', 'sage') }}</h1>
+    <div class="h2">
         {{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}
     </div>
-
+    <a class='btn btn-dark' href='/'>{{ __('Return to Home page', 'sage') }}</a>
+</div>
+</div>
 
 {% endblock %}

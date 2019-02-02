@@ -6,7 +6,8 @@
   "browserSyncWatchFiles" : [
     "./css/*.min.css",
     "./js/*.min.js",
-    "./**/*.php"
+    "./**/*.php",
+    "./**/*.twig"
   ],
   "paths" : {
     "js": "./js",

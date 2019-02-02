@@ -57,9 +57,9 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Primary', 'sage'),
     'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="card widget %1$s %2$s">',
+    'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h5 class="card-header">',
+    'before_title'  => '<h5 class="widget-header">',
     'after_title'   => '</h5>'
   ]);
   // register_sidebar([
@@ -84,6 +84,7 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_home(),
     is_page_template('template-custom.php'),
   ]);
 
@@ -113,9 +114,9 @@ function assets() {
 
 
     */
-		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-			wp_enqueue_script( 'comment-reply' );
-		}
+		// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		// 	wp_enqueue_script( 'comment-reply' );
+		// }
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
@@ -123,26 +124,20 @@ add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 function my_search_form( $form ) {
   $langUrl = pll_current_language() == pll_default_language() ? "":pll_current_language();
   $form = '
-  <div class="">
-            <h5 class="card-header">Search</h5>
-            <div class="card-body">
+  
             <form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . $langUrl . '/" >
               <div class="input-group">
               <label class="sr-only" for="s">' . __( 'Search for:' ) . '</label>
                 <input type="text" class="form-control" placeholder="' . __( 'Search for:' ) . '" value="' . get_search_query() . '" name="s" id="s">
                 <span class="input-group-append">
-                  <button id="searchsubmit" class="btn btn-secondary" type="submit">'. esc_attr__( 'Search' ) .'</button>
+                  <button id="searchsubmit" class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
                 </span>
               </div>
               </form>
-            </div>
-          </div>
-
-  
-  <div>
+           
   ';
 
   return $form;
 }
 
-add_filter( 'get_search_form', __NAMESPACE__ . '\\my_search_form', 100 );
+//add_filter( 'get_search_form', __NAMESPACE__ . '\\my_search_form', 100 );

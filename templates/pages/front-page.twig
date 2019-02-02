@@ -1,25 +1,13 @@
 {% extends "templates/base.twig" %}
 {% block main %}
-    <header class="business-header" style="background-image: url( '{{ function('get_the_post_thumbnail_url') }}')">
-        <div class="container-x">
-            <div class="row-x">
-                <div class="container">
-                    <h1>
-                        <span>zak</span>
-                        <span role="presentation">&lt;/&gt;</span>
-                        <span>cnaan</span>
-                    </h1>
-                </div>
+    <main id='content' class='hp-jumbo' style="background-image: url( '{{ function('get_the_post_thumbnail_url') }}')">
+        <div class=" mb-0 jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">
+                    {{site.name}}</h1>
+                <div class="lead">
+                    {{ posts[0].content }}</div>
             </div>
         </div>
-    </header>
-    <div class="wrap container " id="content" role="document">
-        <div class="content row justify-content-md-center">
-            <main class='main col-md-9 text-center lead'>
-                {% for post in posts %}
-                    {{ post.content }}
-                {% endfor %}
-            </main>
-        </div>
-    </div>
+    </main>
 {% endblock %}

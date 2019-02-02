@@ -1,9 +1,25 @@
-<article{{ function('post_class') }}>
+
+<div class="card mb-4">
+<article {{function('post_class')}}>
+<div class="card-body">
     <header>
-        <h2 class="entry-title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+        <h2 class="entry-title">
+            <a href="{{ post.link }}">
+                {{ post.title }}</a>
+        </h2>
         {% include "blocks/entry-meta.twig" %}
+
+        {%if post.thumbnail %}
+                <figure class='post-thumbnail'>
+                    <img src="{{ post.thumbnail.src }}" alt='{{ post.thumbnail.alt }}'/>
+                </figure>
+            {% endif %}
     </header>
     <div class="entry-summary">
-        {{ post.post_excerpt }}
+        <p>
+            {{ post.post_excerpt == "" ? post.post_content|excerpt(32):post.post_excerpt }}
+        </p>
+    </div>
     </div>
 </article>
+    </div>

@@ -1,3 +1,4 @@
+{# {% extends "layouts/centered.twig" %} #}
 {% extends "base.twig" %}
 {% block content %}
     <article {{ function('post_class') }}>
@@ -15,19 +16,24 @@
             {{ post.content }}
         </div>
         <footer>
+        <hr class='text-danger' />
             {{ wp_link_pages }}
-            {% include "blocks/comment-form.twig" %}
-            
-            {% if post.comments|length > 0 %}
-                <h3>
-                    {{ __('replies', 'sage') }}</h3>
-                {% for comment in post.comments %}
-                    <div class="comment-{{comment.ID}} comment-order-{{loop.index}}">
-                        {% include "blocks/comment.twig" with {comment:comment} %}
-                    </div>
-                {% endfor %}
-            {% endif %}
-            
+
+<div>
+        <i class='far fa-folder text-primary'> Categories: </i>
+            {% for term in post.terms('category') %}
+                <a href='{{term.link}}' class='badge badge-primary'>
+                    {{term.name}}</a>
+            {% endfor %}
+</div>
+<div>
+        <i class='far fa-edit text-primary'> Tags: </i>
+
+            {% for term in post.terms('tags') %}
+                <a href='{{term.link}}' class='badge badge-primary'>
+                    {{term.name}}</a>
+            {% endfor %}
+            </div>
         </footer>
     </article>
 {% endblock %}

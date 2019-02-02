@@ -4,11 +4,12 @@
 
     {% include 'blocks/page-header.twig' %}
 
+<div class="row article-list">
     {% for post in posts %}
-
+<div class='col-lg-4'>
         {% include "blocks/content.twig" with {post: post}  %}
-
+</div>
     {% endfor %}
-
+</div>
 {% endblock %}
 

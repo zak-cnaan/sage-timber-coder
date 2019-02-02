@@ -183,7 +183,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task( 'browser-sync', function() {
-    browserSync.init( ['./dist/**/*.*'], cfg.browserSyncOptions );
+    browserSync.init( ['./dist/**/*.*', './**/*.twig', './**/*.php'], cfg.browserSyncOptions );
 });
 
 gulp.task( 'sync', ['browser-sync', 'watch'], function() {});

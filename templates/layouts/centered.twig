@@ -1,0 +1,11 @@
+{% extends "base.twig" %}
+
+{% block main %}
+    <div class="wrap container" id="content" role="document">
+        <div class="content row">
+            <main class='main col-md-2'>
+                {% block content %}contents goes here{% endblock %}
+            </main>
+        </div>
+    </div>
+{% endblock %}
