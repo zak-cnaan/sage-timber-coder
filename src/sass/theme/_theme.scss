@@ -191,3 +191,23 @@ section.fp{
         }
     }
 }
+
+#languages{
+    padding:0 0.25rem;
+    .widget_polylang{
+        ul{
+            @extend .list-unstyled;
+            padding: 0;
+            margin:0;
+            a{
+                display: block;
+                padding: 0.5rem;
+            }
+        }
+        .widget-header,
+        .sdfsdf{
+            @extend .sr-only;
+        }
+        font-size: 0;
+    }
+}

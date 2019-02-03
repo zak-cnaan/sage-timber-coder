@@ -62,6 +62,14 @@ function widgets_init() {
     'before_title'  => '<h5 class="widget-header">',
     'after_title'   => '</h5>'
   ]);
+  register_sidebar([
+    'name'          => __('Header', 'sage'),
+    'id'            => 'sidebar-header',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h5 class="widget-header">',
+    'after_title'   => '</h5>'
+  ]);
   // register_sidebar([
   //   'name'          => __('Footer', 'sage'),
   //   'id'            => 'sidebar-footer',
