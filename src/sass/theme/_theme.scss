@@ -13,7 +13,9 @@ strong {
     direction:ltr;
 }
 h1{
-    color: $dark;
+    // color: $dark;
+    color: $primary;
+
 }
 body{
     position: relative;
@@ -58,11 +60,12 @@ body{
 
 #Header{
     nav{
-        background-color: $dark;
+        background-color: $primary;
     }
 }
 #Footer{
-    background-color: $secondary;
+    background-color: $dark;
+    color: $light;
     padding: 0.5rem 0;
     
 }
