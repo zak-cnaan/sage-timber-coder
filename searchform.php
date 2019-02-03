@@ -6,4 +6,9 @@
  * of the php templates in this theme. But then again, if such a simple solution
  * is available, why not use it?
  */
-Timber::render( 'blocks/searchform.twig' );
+
+$context = array();
+$context['hi2'] = pll_current_language();
+$context['hi3'] = pll_default_language();
+$context['search_url'] = pll_default_language() == pll_current_language() ? '/':'/'.pll_current_language().'/';
+Timber::render( 'blocks/searchform.twig', $context );

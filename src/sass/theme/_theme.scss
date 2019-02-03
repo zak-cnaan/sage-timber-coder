@@ -165,7 +165,9 @@ section.fp{
     .search-collapse{
             order:7;
             flex: 0 0 100%;
+            > div{
             padding: 1rem 0;
+            }
         }
     @include media-breakpoint-down(sm) {
         .search-collapse,

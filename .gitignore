@@ -7,4 +7,5 @@ npm-debug.log
 vendor
 yarn.lock
 .idea
+*.zip
 !.gitkeep
