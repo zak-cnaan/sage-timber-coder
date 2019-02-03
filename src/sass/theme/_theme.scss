@@ -17,6 +17,9 @@ h1{
 }
 body{
     position: relative;
+    [dir='rtl']{
+        text-align: right;
+    }
     &.rtl{
         text-align: right;
         direction: rtl;
@@ -212,4 +215,14 @@ section.fp{
         }
         font-size: 0;
     }
+}
+
+.navbar-brand{
+    img{
+        height: 48px;
+    }
+}
+
+.editor-post-title__block .editor-post-title__input{
+    @extend .h1;
 }

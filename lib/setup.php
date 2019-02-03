@@ -43,10 +43,11 @@ function setup() {
   // Enable HTML5 markup support
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
   add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
-
+  add_theme_support( 'custom-logo' );
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
-  add_editor_style(Assets\asset_path('styles/main.css'));
+  add_theme_support( 'editor-styles' );
+  add_editor_style(get_stylesheet_directory_uri() . '/dist/styles/styles.min.css?v=2');
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
@@ -99,6 +100,18 @@ function display_sidebar() {
   return apply_filters('sage/display_sidebar', $display);
 }
 
+function brand(){
+$ret = '';
+  $custom_logo_id = get_theme_mod( 'custom_logo' );
+$logo = wp_get_attachment_image_src( $custom_logo_id , 'thumbnail' );
+if ( has_custom_logo() ) {
+  $ret =  '<img alt="'.get_bloginfo( 'name' ).'" src="'. esc_url( $logo[0] ) .'">';
+} else {
+        $ret =  get_bloginfo( 'name' );
+}
+
+  return $ret;
+}
 /**
  * Theme assets
  */

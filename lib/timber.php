@@ -39,6 +39,8 @@ class SageTimberTheme extends TimberSite {
         $context['sidebar_header'] = Timber::get_widgets('sidebar-header');
 
         $context['the_title'] = Titles\title();
+        $context['brand'] = Setup\brand();
+
 
 
 //         $context['pll_e'] = TimberHelper::ob_function('pll_e');
