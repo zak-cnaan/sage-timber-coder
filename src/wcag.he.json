@@ -1,0 +1,1474 @@
+[
+    {
+        "ref_id": "1",
+        "title": "נתפס",
+        "description": "מידע ומרכיבי ממשק המשתמש חייבים להיות מוצגים כך שהמשתמשים יוכלו לתפוס (perceive) אותם.",
+        "url": "https://www.w3.org/TR/WCAG20/#perceivable",
+        "guidelines": [
+            {
+                "ref_id": "1.1",
+                "title": "חלופה טקסטואלית",
+                "description": "יש לספק חלופות טקסטואליות עבור תכנים שאינם טקסטואליים, כך שניתן יהיה להמירן לצורות אחרות להן זקוקים אנשים, כמו אותיות גדולות, ברייל, דיבור, סמלים או שפה פשוטה יותר.",
+                "url": "https://www.w3.org/TR/WCAG20/#text-equiv",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 1.1",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "1.1.1",
+                        "title": "תכנים שאינם טקסטואליים",
+                        "description": "לכל התכנים שאינם טקסטואליים המוצגים למשתמש ישנן חלופות טקסטואליות המשמשות למטרה זהה, מלבד המצבים הרשומים בהמשך.",
+                        "url": "https://www.w3.org/TR/WCAG20/#text-equiv-all",
+                        "level": "A",
+                        "special_cases": [
+                            {
+                                "type": "exception",
+                                "title": "פקדים, קלט",
+                                "description": "כאשר תוכן שאינו טקסטואלי הינו פקד או אמור לקבל קלט מן המשתמש, אזי יש לו שם המתאר את תכליתו. (ראו הנחיה 4.1 לדרישות נוספות עבור פקדים המקבלים קלט מן המשתמש)."
+                            }, {
+                                "type": "exception",
+                                "title": "מדיה מבוססת-זמן",
+                                "description": "כאשר תוכן שאינו טקסטואלי הינו מדיה מבוססת-זמן, אזי חלופות טקסטואליות מספקות לכל הפחות זיהוי על ידי תאור של התוכן שאינו טקסטואלי. (יש להתייחס להנחיה 1.2 לצורך דרישות נוספות עבור מדיה)."
+                            }, {
+                                "type": "exception",
+                                "title": "מבחן",
+                                "description": "כאשר תוכן שאינו טקסטואלי הינו מבחן או תרגיל שיהיה חסר-תוקף אם יוצג באמצעות טקסט, אזי חלופות טקסטואליות מספקות לכל הפחות זיהוי על ידי תאור של התוכן שאינו טקסטואלי."
+                            }, {
+                                "type": "exception",
+                                "title": "תחושתי",
+                                "description": "כאשר תוכן שאינו טקסטואלי מכוון בעיקר ליצירת חוויה תחושתית מוגדרת, אזי חלופות טקסטואליות מספקות לכל הפחות זיהוי על ידי תאור של התוכן שאינו טקסטואלי."
+                            }, {
+                                "type": "exception",
+                                "title": "CAPTCHA",
+                                "description": "כאשר תכלית של תוכן שאינו טקסטואלי הינה לאשר שהגישה לתכנים בוצעה על ידי אדם ולא על ידי מחשב, אזי ניתנות חלופות טקסטואליות המזהות ומתארות את התכלית של התכנים שאינם טקסטואליים, וניתנות צורות חלופיות של CAPTCHA עבור סוגים שונים של תפיסה חושית, כדי לאפשר קליטה למרות המוגבלויות השונות."
+                            }, {
+                                "type": "exception",
+                                "title": "קישוט, עיצוב, בלתי נראה",
+                                "description": "כאשר תוכן שאינו טקסטואלי הינו קישוט טהור, או משמש לעיצוב קישוט בלבד, או אינו מוצג למשתמשים, אזי הוא מיושם באופן בו טכנולוגית עזר יכולה להתעלם ממנו."
+                            }
+                        ],
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.1.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-text-equiv-all"
+                            }, {
+                                "title": "הבנת הנחיה 1.1.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "1.2",
+                "title": "מדיה מבוססת-זמן",
+                "description": "יש להמציא חלופות עבור מדיה מבוססת-זמן.",
+                "url": "https://www.w3.org/TR/WCAG20/#media-equiv",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 1.2",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "1.2.1",
+                        "title": "אודיו-בלבד ווידאו-בלבד (הקלטה מראש)",
+                        "description": "הכתוב להלן מתאים עבור אמצעי-תקשורת מוקלטת מראש של אודיו-בלבד ושל וידאו-בלבד, מלבד המקרים בהם האודיו או הוידאו הינם מדיה חלופית לטקסט, ומסומן ככזה באופן מובהק.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt",
+                        "level": "A",
+                        "special_cases": [
+                            {
+                                "type": "all_true",
+                                "title": "אודיו-בלבד מוקלט מראש",
+                                "description": "מסופקת חלופה למדיה מבוססת-זמן , המציגה מידע שווה-ערך לתכנים המוקלטים מראש של אודיו-בלבד."
+                            }, {
+                                "type": "all_true",
+                                "title": "וידאו-בלבד מוקלט מראש",
+                                "description": "מסופקת חלופה למדיה מבוססת-זמן או מסופק ערוץ אודיו המגיש מידע שווה-ערך לתכנים המוקלטים מראש של וידאו-בלבד."
+                            }
+                        ],
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-av-only-alt"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.2",
+                        "title": "כתוביות (הקלטה מראש)",
+                        "description": "מסופקות כתוביות לכל התכנים של האודיו המוקלט מראש במדיה מסונכרנת, אלא אם כן המדיה היא מדיה חלופית לטקסט והיא מסומנת בבירור ככזו.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-captions",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.3",
+                        "title": "תאורי אודיו או חלופה למדיה (מוקלטת מראש)",
+                        "description": "חלופה למדיה מבוססת-זמן או לתאור אודיו של תכני וידאו מוקלטים מראש ניתנת עבור מדיה מסונכרנת , מלבד המקרים בהם המדיה הינה מדיה חלופית עבור טקסט והיא מתויגת בבירור ככזו.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.4",
+                        "title": "כיתובים (חי)",
+                        "description": "יש לספק כתוביות במדיה מסונכרנת לכל שידור חי של תוכן בשמע.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.4",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.4",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.5",
+                        "title": "תאור אודיו (מוקלט מראש)",
+                        "description": "ניתן תאור אודיו במדיה מסונכרנת עבור כל תכני הוידאו המוקלטים מראש.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.5",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.5",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.6",
+                        "title": "Sign Language (Prerecorded)",
+                        "description": "Sign language interpretation is provided for all prerecorded audio content in synchronized media.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-sign",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.6",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-sign"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.6",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.7",
+                        "title": "Extended Audio Description (Prerecorded)",
+                        "description": "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-extended-ad",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.7",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-extended-ad"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.7",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.8",
+                        "title": "Media Alternative (Prerecorded)",
+                        "description": "An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-text-doc",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.8",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-text-doc"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.8",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.2.9",
+                        "title": "Audio-only (Live)",
+                        "description": " An alternative for time-based media that presents equivalent information for live audio-only content is provided.",
+                        "url": "https://www.w3.org/TR/WCAG20/#media-equiv-live-audio-only",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.2.9",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-live-audio-only"
+                            }, {
+                                "title": "הבנת הנחיה 1.2.9",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "1.3",
+                "title": "ניתן להתאמה",
+                "description": "יש לבנות תכנים הניתנים להצגה בדרכים שונות (למשל מיתווה פשוט יותר) ללא איבוד מידע או מבנה.",
+                "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 1.3",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "1.3.1",
+                        "title": "מידע וקשרים",
+                        "description": "מידע, מבנה, וקשרים הנמסרים באמצעות הצגה ניתנים לזיהוי ע\"י תוכנה או שהם זמינים כטקסט.",
+                        "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.3.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic"
+                            }, {
+                                "title": "הבנת הנחיה 1.3.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.3.2",
+                        "title": "רצף בעל משמעות",
+                        "description": "כאשר הרצף בו מוצגים התכנים משפיע על משמעותם, ניתן לבצע זיהוי ע\"י תוכנה של רצף קריאה נכון.",
+                        "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation-sequence",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.3.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-sequence"
+                            }, {
+                                "title": "הבנת הנחיה 1.3.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.3.3",
+                        "title": "מאפייני חישה",
+                        "description": "הנחיות הניתנות לשם הבנה והפעלה של תכנים אינן נסמכות אך ורק על מאפייני חישה של מרכיבים כגון צורה, גודל, מיקום חזותי, כיוון או צליל.",
+                        "url": "https://www.w3.org/TR/WCAG20/#content-structure-separation-understanding",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "For requirements related to color, refer to Guideline 1.4."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.3.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding"
+                            }, {
+                                "title": "הבנת הנחיה 1.3.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "1.4",
+                "title": "בר-הבחנה",
+                "description": "יש להקל על המשתמשים לראות ולשמוע תכנים לרבות הפרדת חזית מרקע.",
+                "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 1.4",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "1.4.1",
+                        "title": "שימוש בצבע",
+                        "description": "צבע אינו משמש כאמצעי החזותי היחיד להעברת מידע, סימון פעולה, בקשת תגובה, או הבחנה בפרט חזותי.",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "אמת-מידה זו להצלחה מכוונת במפורש לתפיסת צבעים. צורות אחרות של תפיסה מכוסים בהנחיה 1.3 כולל גישה מתוכנתת לצבעים וקידוד אחר להצגה חזותית."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-without-color"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.2",
+                        "title": "שליטה באודיו",
+                        "description": "אם אודיו כלשהו בדף רשת מנגן באופן אוטומטי במשך יותר מ-3 שניות, ניתן מנגנון עצירה או הפסקה, או שניתן מנגנון לשליטה בעוצמת האודיו באופן בלתי תלוי בדרגת העוצמה הכללית במערכת.",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "כיוון שתכנים אשר אינם עומדים באמת-המידה עלולים להפריע ליכולתו של המשתמש להשתמש בדף בשלמותו, כל התכנים שבדף הרשת (בין אם הם משמשים לעמידה באמות מידה אחרות ובין אם לא) חייבים לענות על אמות-מידה אחרות לעמידה בדרישות. ראו דרישת התאמה 5: אי-התנגשות. (https://www.w3.org/TR/WCAG20/#cc5)"
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-dis-audio"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.3",
+                        "title": "קונטרסט (מינימום)",
+                        "description": "בהצגה החזותית של טקסט ותמונות-טקסט ישנו יחס-קונטרסט של לפחות 4.5:1, מלבד המקרים הבאים:",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast",
+                        "level": "AA",
+                        "special_cases": [
+                            {
+                                "type": "exception",
+                                "title": "טקסט גדול",
+                                "description": "לטקסט בקנה-מידה גדול ולתמונות-טקסט בקנה מידה גדול יש יחס קונטרסט של לפחות 3:1;"
+                            }, {
+                                "type": "exception",
+                                "title": "משני",
+                                "description": "עבור טקסט או תמונות-טקסט שהם חלק ממרכיב של ממשק משתמש בלתי פעיל, או שהם קישוט בלבד, או שאינם גלויים לאף אחד, או שהם חלק מתמונה המכילה תכנים חזותיים חשובים אחרים, אין דרישת מינימום לקונטרסט."
+                            }, {
+                                "type": "exception",
+                                "title": "הדפס לוגו",
+                                "description": "לטקסט שהינו חלק מלוגו או משם מותג אין דרישת מינימום לקונטרסט."
+                            }
+                        ],
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.4",
+                        "title": "שינוי גודל טקסט",
+                        "description": "מלבד כיתובים ותמונות-טקסט, ניתן לשנות גודל טקסט ללא טכנולוגית-עזר עד 200 אחוז בלי לאבד תיפקוד של התכנים.",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.4",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-scale"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.4",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.5",
+                        "title": "תמונות-טקסט",
+                        "description": "אם הטכנולוגיות בהן משתמשים מסוגלות לבצע את הייצוג החזותי, משתמשים בטקסט למסירת מידע ולא בתמונות-טקסט מלבד המקרים הבאים:",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation",
+                        "level": "AA",
+                        "special_cases": [
+                            {
+                                "type": "exception",
+                                "title": "ניתן להתאמה",
+                                "description": "תמונת-טקסט ניתנת להתאמה חזותית לצרכי המשתמש;"
+                            }, {
+                                "type": "exception",
+                                "title": "חיוני",
+                                "description": "הצגה מסויימת של טקסט הינה חיונית למידע הנמסר."
+                            }
+                        ],
+                        "notes": [
+                            {
+                                "content": "הדפסי-לוגו (טקסט שהוא חלק מלוגו או שם מותג) נחשבים חיוניים."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.5",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.5",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.6",
+                        "title": "Contrast (Enhanced)",
+                        "description": "The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: ",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast7",
+                        "level": "AAA",
+                        "special_cases": [
+                            {
+                                "type": "exception",
+                                "title": "Large Text",
+                                "description": "Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;"
+                            }, {
+                                "type": "exception",
+                                "title": "Incidental",
+                                "description": "Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement."
+                            }, {
+                                "type": "exception",
+                                "title": "Logotypes",
+                                "description": "Text that is part of a logo or brand name has no minimum contrast requirement."
+                            }
+                        ],
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.6",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast7"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.6",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.7",
+                        "title": "Low or No Background Audio",
+                        "description": "For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-noaudio",
+                        "level": "AAA",
+                        "special_cases": [
+                            {
+                                "type": "at_least_one",
+                                "title": "No Background",
+                                "description": "The audio does not contain background sounds."
+                            }, {
+                                "type": "at_least_one",
+                                "title": "Turn Off",
+                                "description": "The background sounds can be turned off."
+                            }, {
+                                "type": "at_least_one",
+                                "title": "20 dB",
+                                "description": "The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds."
+                            }
+                        ],
+                        "notes": [
+                            {
+                                "content": "Per the definition of 'decibel,' background sound that meets this requirement will be approximately four times quieter than the foreground speech content."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.7",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-noaudio"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.7"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.8",
+                        "title": "Visual Presentation",
+                        "description": "For the visual presentation of blocks of text, a mechanism is available to achieve the following:",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation",
+                        "level": "AAA",
+                        "special_cases": [
+                            {
+                                "type": "all_true",
+                                "title": "Foreground and background colors can be selected by the user."
+                            }, {
+                                "type": "all_true",
+                                "title": "Width is no more than 80 characters or glyphs (40 if CJK)."
+                            }, {
+                                "type": "all_true",
+                                "title": "Text is not justified (aligned to both the left and the right margins)."
+                            }, {
+                                "type": "all_true",
+                                "title": "Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing."
+                            }, {
+                                "type": "all_true",
+                                "title": "Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window."
+                            }
+                        ],
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.8",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.8",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "1.4.9",
+                        "title": "Images of Text (No Exception)",
+                        "description": "Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.",
+                        "url": "https://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-images",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "Logotypes (text that is part of a logo or brand name) are considered essential."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 1.4.9",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-images"
+                            }, {
+                                "title": "הבנת הנחיה 1.4.9",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }, {
+        "ref_id": "2",
+        "title": "ניתן להפעלה",
+        "description": "המרכיבים והניווט של ממשק המשתמש חייבים להיות ניתנים להפעלה.",
+        "url": "https://www.w3.org/TR/WCAG20/#operable",
+        "guidelines": [
+            {
+                "ref_id": "2.1",
+                "title": "מקלדת נגישה",
+                "description": "יש לאפשר תפקוד מלא ממקלדת.",
+                "url": "https://www.w3.org/TR/WCAG20/#keyboard-operation",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 2.1",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "2.1.1",
+                        "title": "מקלדת",
+                        "description": "כל התפקוד של התכנים ניתן להפעלה מתוך ממשק מקלדת ללא דרישה של הגבלות זמן מסוימות ללחיצות על מקשים מיוחדים, מלבד מקרים בהם התפקוד הנדרש זקוק לקלט התלוי במסלול של תנועת המשתמש ולא רק בנקודות הקצה.",
+                        "url": "https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "חריג זה קשור לתפקוד הנדרש, לא לתהליך ביצוע הקלט. לדוגמא, אם משתמשים בכתב יד להזנת טקסט, תהליך הקלט (כתב-יד) זקוק לקלט תלוי-מסלול אך התפקוד הנדרש (קלט טקסט) אינו דורש זאת."
+                            }, {
+                                "content": "הדרישה אינה אוסרת ולא צריכה להרתיע מלאפשר קלט עכבר או שיטות קלט אחרות בנוסף לפעולת המקלדת."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.1.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-keyboard-operable"
+                            }, {
+                                "title": "הבנת הנחיה 2.1.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.1.2",
+                        "title": "הימנעות ממלכודות מקלדת",
+                        "description": "אם ניתן להעביר את מוקד המקלדת לרכיב של הדף באמצעות שימוש בממשק מקלדת, ניתן להעתיק את המוקד מרכיב זה תוך שימוש בממשק המקלדת בלבד, ואם נדרשים לשם כך יותר ממקש חץ או מקש Tab בלבד, או שיטות יציאה סטנדרטיות אחרות, המשתמש מקבל הכוונה לשיטת העתקת המוקד.",
+                        "url": "https://www.w3.org/TR/WCAG20/#keyboard-operation-trapping",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "כיוון שתכנים כלשהם שאינם עונים על אמת-מידה זו להצלחה עלולים למנוע יכולת משתמש להשתמש בדף כולו, כל התכנים על דף הרשת (בין אם הם משמשים לעמידה באמות-מידה אחרות או לא) חייבים לעמוד באמת-מידה זו. ראו דרישת התאמה 5: אי-מניעה. (https://www.w3.org/TR/WCAG20/#cc5)"
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.1.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-trapping"
+                            }, {
+                                "title": "הבנת הנחיה 2.1.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.1.3",
+                        "title": "Keyboard (No Exception)",
+                        "description": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.",
+                        "url": "https://www.w3.org/TR/WCAG20/#keyboard-operation-all-funcs",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.1.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-all-funcs"
+                            }, {
+                                "title": "הבנת הנחיה 2.1.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "2.2",
+                "title": "זמן מספיק",
+                "description": "יש לתת למשתמשים מספיק זמן לקרוא ולהשתמש בתכנים.",
+                "url": "https://www.w3.org/TR/WCAG20/#time-limits",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 2.2",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "2.2.1",
+                        "title": "תזמון מתכוונן",
+                        "description": "עבור כל מגבלת זמן הנקבעת על ידי התכנים, לפחות אחד מהבאים נכון:",
+                        "url": "https://www.w3.org/TR/WCAG20/#time-limits-required-behaviors",
+                        "level": "A",
+                        "special_cases": [
+                            {
+                                "type": "at_least_one",
+                                "title": "חסימה",
+                                "description": "מותר למשתמש לחסום את מגבלת הזמן לפני ההיתקלות בו; או"
+                            }, {
+                                "type": "at_least_one",
+                                "title": "התאמה",
+                                "description": "מותר למשתמש להתאים את מגבלת הזמן לפני ההיתקלות בו לתחום רחב שהינו פי עשר לפחות מקביעת ברירת המחדל; או"
+                            }, {
+                                "type": "at_least_one",
+                                "title": "הרחבה",
+                                "description": "ניתנת אזהרה למשתמש לפני פקיעת הזמן וניתנות לו לפחות 20 שניות להרחבת מגבלת הזמן בפעולה פשוטה (לדוגמא, \"לחץ על מקש-הרווח\"), ומותר למשתמש להרחיב את מגבלת הזמן פי 10 לפחות; או"
+                            }, {
+                                "type": "at_least_one",
+                                "title": "חריג זמן-אמת",
+                                "description": "מגבלת הזמן הינה חלק נדרש מארוע בזמן-אמת (לדוגמא, מכירה פומבית), ושום חלופה למגבלת הזמן אינה אפשרית; או"
+                            }, {
+                                "type": "at_least_one",
+                                "title": "חיוניות חריגה",
+                                "description": "מגבלת הזמן הינה חיונית והרחבתה תשלול את תוקף הפעולה; או"
+                            }, {
+                                "type": "at_least_one",
+                                "title": "חריגת 20 שעות",
+                                "description": "מגבלת הזמן עולה על 20 שעות."
+                            }
+                        ],
+                        "notes": [
+                            {
+                                "content": "אמת-מידה זו להצלחה מסייעת לוודא שמשתמשים יכולים להשלים משימות ללא שינויים בלתי צפויים בתכנים או בהקשר כתוצאה ממגבלת זמן. יש להביא בחשבון אמת-מידה זו להצלחה יחד עם אמת-מידה להצלחה 3.2.1, המגבילה שינויי תכנים או הקשר כתוצאה של פעולת משתמש."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.2.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-required-behaviors"
+                            }, {
+                                "title": "הבנת הנחיה 2.2.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.2.2",
+                        "title": "הפסקה, עצירה, הסתרה",
+                        "description": "עבור תנועה, הבהוב, גלילה, או מידע המתעדכן מעצמו, כל הבאים נכונים:",
+                        "url": "https://www.w3.org/TR/WCAG20/#time-limits-pause",
+                        "level": "A",
+                        "special_cases": [
+                            {
+                                "type": "all_true",
+                                "title": "הזזה, הבהוב, גלילה",
+                                "description": "לכל מידע נע, מהבהב או נגלל אשר (1) מתחיל באופן אוטומטי, (2) נמשך יותר מאשר 5 שניות, ו-(3) מוצג במקביל לתכנים אחרים, קים מנגנון עבור המשתמש להפסיק, לעצור, או להסתיר אותו אלא אם כן התנועה, ההבהוב, או הגלילה הינם חלק מהפעילות בה הם חיוניים; וגם"
+                            }, {
+                                "type": "all_true",
+                                "title": "עדכון-מעצמו",
+                                "description": "לכל מידע המתעדכן מעצמו אשר (1) מתחיל באופן אוטומטי ו-(2) מוצג במקביל לתכנים אחרים, ישנו מנגנון עבור המשתמש להפסיק, לעצור, או להסתיר אותו או לשלוט בתדירות העדכון אלא אם כן העדכון העצמי הינו חלק מפעילות בה הוא חיוני."
+                            }
+                        ],
+                        "notes": [
+                            {
+                                "content": "לדרישות הקשורות להבהוב או הבזק, ראו הנחיה 2.3. (https://www.w3.org/TR/WCAG20/#seizure)"
+                            }, {
+                                "content": "כיון שתכנים כלשהם שאינם עונים לאמת-מידה זו להצלחה עלולים למנוע יכולת משתמש להשתמש בדף כולו, כל התכנים על דף הרשת (בין אם הם משמשים לעמידה באמת-מידה אחרת או לא) חייבים לעמוד באמת-מידה זו להצלחה. ראו דרישת התאמה 5: אי-התנגשות. (https://www.w3.org/TR/WCAG20/#cc5)"
+                            }, {
+                                "content": "תכנים המעודכנים מזמן לזמן על ידי תוכנה הזורמת אל סוכן-המשתמש אינם נדרשים לשמר או להציג מידע הנוצר או מתקבל בין תחילת ההפסקה לבין המשך ההצגה, כיון שזה עשוי להיות בלתי אפשרי מבחינה טכנית, ובמצבים רבים אם עושים זאת, זה עלול להטעות."
+                            }, {
+                                "content": "ניתן להתייחס להנפשה המופיעה כחלק משלב טעינה מראש או במצב דומה כאל חיונית אם לא יכולה להיות אינטראקציה במהלך שלב זה עבור כל המשתמשים ואם אי-סימון התקדמות עלול לבלבל משתמשים או לגרום להם לחשוב שהתכנים קפאו או נקטעו."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.2.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause"
+                            }, {
+                                "title": "הבנת הנחיה 2.2.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.2.3",
+                        "title": "No Timing",
+                        "description": "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.",
+                        "url": "https://www.w3.org/TR/WCAG20/#time-limits-no-exceptions",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.2.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-no-exceptions"
+                            }, {
+                                "title": "הבנת הנחיה 2.2.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.2.4",
+                        "title": "Interruptions",
+                        "description": "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.",
+                        "url": "https://www.w3.org/TR/WCAG20/#time-limits-postponed",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.2.4",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-postponed"
+                            }, {
+                                "title": "הבנת הנחיה 2.2.4",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.2.5",
+                        "title": "Re-authenticating",
+                        "description": "When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.",
+                        "url": "https://www.w3.org/TR/WCAG20/#time-limits-server-timeout",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.2.5",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-server-timeout"
+                            }, {
+                                "title": "הבנת הנחיה 2.2.5",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "2.3",
+                "title": "התקפים",
+                "description": "אין לעצב תכנים באופן הידוע כגורם להתקפים.",
+                "url": "https://www.w3.org/TR/WCAG20/#seizure",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 2.3",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "2.3.1",
+                        "title": "שלושה הבזקים או מתחת לסף",
+                        "description": "דפי רשת אינם מכילים שום דבר המבזיק (מהבהב) יותר משלוש פעמים במשך שניה אחת, או שההבזק הוא מתחת לספים להבזק כללי ולהבזק אדום.",
+                        "url": "https://www.w3.org/TR/WCAG20/#seizure-does-not-violate",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "כיוון שתכנים כלשהם שאינם עונים על אמת-מידה זו להצלחה עלולים למנוע יכולת משתמש להשתמש בדף כולו, כל התכנים על דף הרשת (בין אם הם משמשים לעמידה באמות-מידה אחרות או לא) חייבים לעמוד באמת-מידה זו. ראו דרישת התאמה 5: אי-התנגשות. (https://www.w3.org/TR/WCAG20/#cc5)"
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.3.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-does-not-violate"
+                            }, {
+                                "title": "הבנת הנחיה 2.3.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.3.2",
+                        "title": "Three Flashes",
+                        "description": "Web pages do not contain anything that flashes more than three times in any one second period.",
+                        "url": "https://www.w3.org/TR/WCAG20/#seizure-three-times",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.3.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-three-times"
+                            }, {
+                                "title": "הבנת הנחיה 2.3.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "2.4",
+                "title": "ניתן לניווט",
+                "description": "יש לספק דרכים כדי לעזור למשתמשים לנווט, לאתר תכנים, ולקבוע את מקום הימצאם.",
+                "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 2.4",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "2.4.1",
+                        "title": "עקיפת בלוקים",
+                        "description": "יש לספק מנגנון לעקיפת בלוקים החוזרים על עצמם בעמודים באתר.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-skip"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.2",
+                        "title": "דף בעל כותרת",
+                        "description": "דפי רשת הם בעלי כותרות המתארות נושא או מטרה.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-title",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.3",
+                        "title": "סדר ה-Focus",
+                        "description": "כאשר דף רשת ניתן לניווט ברצף ורצפי הניווט משפיעים על משמעות או על פעולה, מרכיבים שניתן לכוון להם את ה-focus מקבלים אותו בסדר המשמר משמעות ותפעול.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.4",
+                        "title": "מטרת הקישור (בהקשר)",
+                        "description": "המטרה של כל קישור עשויה להקבע מתוך טקסט הקישור עצמו או מתוך טקסט הקישור יחד עם הקשר הקישור על פי זיהוי ע\"י תוכנה, מלבד המקרים בהם המטרה של הקישור תהיה בלתי ברורה למשתמשים באופן כללי.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.4",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.4",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.5",
+                        "title": "ריבוי דרכים",
+                        "description": "זמינה יותר מדרך אחת לאיתור דף רשת בתוך מערכת של דפי רשת מלבד המקרים בהם דף הרשת הינו תוצאה של תהליך או שלב במהלכו.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.5",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-mult-loc"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.5",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.6",
+                        "title": "כותרות ותויות",
+                        "description": "כותרות ותויות מתארות נושא או מטרה.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.6",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-descriptive"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.6",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.7",
+                        "title": "Focus נראה לעין",
+                        "description": "לכל ממשק משתמש זמין של מקלדת יש מצב הפעלה בו ניתן לראות את focus המקלדת.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.7",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-visible"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.7",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.8",
+                        "title": "Location",
+                        "description": "Information about the user's location within a set of Web pages is available.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-location",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.8",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-location"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.8",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.9",
+                        "title": "Link Purpose (Link Only)",
+                        "description": "A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-link",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.9",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-link"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.9",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "2.4.10",
+                        "title": "Section Headings",
+                        "description": "Section headings are used to organize the content.",
+                        "url": "https://www.w3.org/TR/WCAG20/#navigation-mechanisms-headings",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "'Heading' is used in its general sense and includes titles and other ways to add a heading to different types of content."
+                            }, {
+                                "content": "This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2. (http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv)"
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 2.4.10",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-headings"
+                            }, {
+                                "title": "הבנת הנחיה 2.4.10",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }, {
+        "ref_id": "3",
+        "title": "ניתן להבנה",
+        "description": "מידע ופעולת ממשק המשתמש חייבים להיות ניתנים להבנה.",
+        "url": "https://www.w3.org/TR/WCAG20/#understandable",
+        "guidelines": [
+            {
+                "ref_id": "3.1",
+                "title": "קריא",
+                "description": "יש ליצור תכני טקסט קריאים וניתנים להבנה.",
+                "url": "https://www.w3.org/TR/WCAG20/#meaning",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 3.1",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "3.1.1",
+                        "title": "השפה בדף",
+                        "description": "ברירת המחדל של שפת אנוש בכל דף רשת יכולה להיות מזוהה ע\"י תוכנה.",
+                        "url": "https://www.w3.org/TR/WCAG20/#meaning-doc-lang-id",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.1.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id"
+                            }, {
+                                "title": "הבנת הנחיה 3.1.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.1.2",
+                        "title": "השפה באזורים",
+                        "description": "שפת האנוש בכל פיסקה או פסוקית מתוך התכנים יכולה להיות מזוהה ע\"י תוכנה מלבד שמות פרטיים, מונחים טכניים, מילים בשפה בלתי מוגדרת, ומילים או ביטויים שנעשו חלק משפת התחום של הטקסט הצמוד אליהם.",
+                        "url": "https://www.w3.org/TR/WCAG20/#meaning-other-lang-id",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.1.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id"
+                            }, {
+                                "title": "הבנת הנחיה 3.1.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.1.3",
+                        "title": "Unusual Words",
+                        "description": "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.",
+                        "url": "https://www.w3.org/TR/WCAG20/#meaning-idioms",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.1.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-idioms"
+                            }, {
+                                "title": "הבנת הנחיה 3.1.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.1.4",
+                        "title": "Abbreviations",
+                        "description": "A mechanism for identifying the expanded form or meaning of abbreviations is available.",
+                        "url": "https://www.w3.org/TR/WCAG20/#meaning-located",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.1.4",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-located"
+                            }, {
+                                "title": "הבנת הנחיה 3.1.4",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.1.5",
+                        "title": "Reading Level",
+                        "description": "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.",
+                        "url": "https://www.w3.org/TR/WCAG20/#meaning-supplements",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.1.5",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-supplements"
+                            }, {
+                                "title": "הבנת הנחיה 3.1.5",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.1.6",
+                        "title": "Pronunciation",
+                        "description": "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.",
+                        "url": "https://www.w3.org/TR/WCAG20/#meaning-pronunciation",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.1.6",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-pronunciation"
+                            }, {
+                                "title": "הבנת הנחיה 3.1.6",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "3.2",
+                "title": "ניתן לניבוי",
+                "description": "יש לגרום לדפי רשת להופיע ולתפקד באופן הניתן לניבוי.",
+                "url": "https://www.w3.org/TR/WCAG20/#consistent-behavior",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 3.2",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "3.2.1",
+                        "title": "On Focus",
+                        "description": "כאשר רכיב מקבל focus, זה אינו גורם לשינוי בהקשר.",
+                        "url": "https://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.2.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-receive-focus"
+                            }, {
+                                "title": "הבנת הנחיה 3.2.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.2.2",
+                        "title": "On Input",
+                        "description": "שינוי הגדרה של רכיב ממשק משתמש כלשהו אינו גורם לשינוי בהקשר באופן אוטומטי אלא אם כן המשתמש קיבל התראה על כך לפני השימוש ברכיב.",
+                        "url": "https://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.2.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-unpredictable-change"
+                            }, {
+                                "title": "הבנת הנחיה 3.2.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.2.3",
+                        "title": "ניווט עקבי",
+                        "description": "מנגנוני ניווט החוזרים בדפי רשת מרובים בתוך מערכת של דפי רשת מופיעים באותו סדר יחסי בכל פעם בה הם חוזרים על עצמם, אלא אם כן נגרם שינוי על ידי המשתמש.",
+                        "url": "https://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.2.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-locations"
+                            }, {
+                                "title": "הבנת הנחיה 3.2.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.2.4",
+                        "title": "זיהוי עקבי",
+                        "description": "מרכיבים בעלי תפקודיות זהה בתוך מערכת של דפי רשת מזוהים באופן עקבי.",
+                        "url": "https://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.2.4",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-functionality"
+                            }, {
+                                "title": "הבנת הנחיה 3.2.4",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.2.5",
+                        "title": "Change on Request",
+                        "description": "Changes of context are initiated only by user request or a mechanism is available to turn off such changes.",
+                        "url": "https://www.w3.org/TR/WCAG20/#consistent-behavior-no-extreme-changes-context",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.2.5",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-no-extreme-changes-context"
+                            }, {
+                                "title": "הבנת הנחיה 3.2.5",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "ref_id": "3.3",
+                "title": "עזרה בקלט",
+                "description": "יש לסייע למשתמשים להמנע משגיאות ולתקנן.",
+                "url": "https://www.w3.org/TR/WCAG20/#minimize-error",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 3.3",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "3.3.1",
+                        "title": "זיהוי שגיאה",
+                        "description": "אם שגיאת קלט מזוהה באופן אוטומטי, מזוהה הפריט השגוי והמשתמש מקבל הסבר טקסטואלי על השגיאה.",
+                        "url": "https://www.w3.org/TR/WCAG20/#minimize-error-identified",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.3.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-identified"
+                            }, {
+                                "title": "הבנת הנחיה 3.3.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.3.2",
+                        "title": "תויות או הוראות",
+                        "description": "ניתנות תויות או הוראות כאשר התכנים דורשים קלט משתמש.",
+                        "url": "https://www.w3.org/TR/WCAG20/#minimize-error-cues",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.3.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues"
+                            }, {
+                                "title": "הבנת הנחיה 3.3.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.3.3",
+                        "title": "הצעת שגיאה",
+                        "description": "אם שגיאת קלט מזוהה באופן אוטומטי וידועות הצעות לתיקון, אזי ההצעות ניתנות למשתמש, אלא אם כן זה עלול לחבל באבטחה או במטרה של התכנים.",
+                        "url": "https://www.w3.org/TR/WCAG20/#minimize-error-suggestions",
+                        "level": "AA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.3.3",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-suggestions"
+                            }, {
+                                "title": "הבנת הנחיה 3.3.3",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.3.4",
+                        "title": "מניעת שגיאות (משפטיות, פיננסיות, נתונים)",
+                        "description": "עבור דפי רשת הגוררים התחיבויות משפטיות או פעולות פיננסיות עבור המשתמש, שינוי או מחיקה של נתוני משתמש מבסיס נתונים, או תשובות משתמש במבחן, לפחות אחד הבאים מתקיים:",
+                        "url": "https://www.w3.org/TR/WCAG20/#minimize-error-reversible",
+                        "level": "AA",
+                        "special_cases": [
+                            {
+                                "type": "at_least_one",
+                                "title": "הפיכות",
+                                "description": "ביצוע הפעולה הוא הפיך."
+                            }, {
+                                "type": "at_least_one",
+                                "title": "בדיקה",
+                                "description": "נתונים שהוזנו על ידי המשתמש נבדקים לאיתור שגיאות קלט ולמשתמש ניתנת הזדמנות לתקן אותן."
+                            }, {
+                                "type": "at_least_one",
+                                "title": "אישור",
+                                "description": "קיים מנגנון לבחינה חוזרת, אישור, ותיקון מידע לפני גיבוש סופי של ההגשה."
+                            }
+                        ],
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.3.4",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible"
+                            }, {
+                                "title": "הבנת הנחיה 3.3.4",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.3.5",
+                        "title": "Help",
+                        "description": "Context-sensitive help is available.",
+                        "url": "https://www.w3.org/TR/WCAG20/#minimize-error-context-help",
+                        "level": "AAA",
+                        "special_cases": null,
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.3.5",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-context-help"
+                            }, {
+                                "title": "הבנת הנחיה 3.3.5",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "3.3.6",
+                        "title": "Error Prevention (All)",
+                        "description": "For Web pages that require the user to submit information, at least one of the following is true:",
+                        "url": "https://www.w3.org/TR/WCAG20/#minimize-error-reversible-all",
+                        "level": "AAA",
+                        "special_cases": [
+                            {
+                                "type": "at_least_one",
+                                "title": "Reversible",
+                                "description": "Submissions are reversible."
+                            }, {
+                                "type": "at_least_one",
+                                "title": "Checked",
+                                "description": "Data entered by the user is checked for input errors and the user is provided an opportunity to correct them."
+                            }, {
+                                "type": "at_least_one",
+                                "title": "Confirmed",
+                                "description": "A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission."
+                            }
+                        ],
+                        "notes": null,
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 3.3.6",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible-all"
+                            }, {
+                                "title": "הבנת הנחיה 3.3.6",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }, {
+        "ref_id": "4",
+        "title": "יציב",
+        "description": "תכנים חייבים להיות יציבים מספיק כך שניתן לתרגם אותם באמינות על ידי מגוון רחב של סוכני משתמש, כולל טכנולוגיות מסייעות.",
+        "url": "https://www.w3.org/TR/WCAG20/#robust",
+        "guidelines": [
+            {
+                "ref_id": "4.1",
+                "title": "תואם",
+                "description": "יש לדאוג לתאימות מירבית עם סוכני משתמש קיימים ועתידיים, כולל טכנולוגיות מסייעות.",
+                "url": "https://www.w3.org/TR/WCAG20/#ensure-compat",
+                "references": [
+                    {
+                        "title": "הבנת הנחיה 4.1",
+                        "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html"
+                    }
+                ],
+                "success_criteria": [
+                    {
+                        "ref_id": "4.1.1",
+                        "title": "Parsing",
+                        "description": "בתכנים המיושמים ב-markup, לאלמנטים יש tag התחלה וסיום מלאים, הרכיבים מקוננים על פי המפרטים שלהם, הרכיבים אינם מכילים attributes כפולים, כל ה-IDs הם ייחודים, מלבד המקרים בהם המפרטים מאפשרים תכונות אלה.",
+                        "url": "https://www.w3.org/TR/WCAG20/#ensure-compat-parses",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "תויות התחלה וסיום בהן חסר תו חיוני במבנה, כמו למשל סוגר משולש מסיים או מרכאות בלתי מתאימות בערך של תכונה, אינן שלמות."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 4.1.1",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-parses"
+                            }, {
+                                "title": "הבנת הנחיה 4.1.1",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html"
+                            }
+                        ]
+                    }, {
+                        "ref_id": "4.1.2",
+                        "title": "שם, תפקיד, ערך",
+                        "description": "עבור כל רכיבי ממשק משתמש (כולל אך לא מוגבל ל: רכיבי טופס, קישורים ורכיבים שנוצרו על ידי תסריט), השם והתפקיד יכולים להיות מזוהים ע\"י תוכנה; מצבים, מאפיינים, וערכים הניתנים לקביעה על ידי המשתמש יכולים להקבע באמצעות תוכנה; והודעות על שינויים בפריטים אלו הינם זמינים לסוכני משתמש, כולל טכנולוגיות מסייעות.",
+                        "url": "https://www.w3.org/TR/WCAG20/#ensure-compat-rsv",
+                        "level": "A",
+                        "special_cases": null,
+                        "notes": [
+                            {
+                                "content": "אמת-מידה זו להצלחה מיועדת בעיקר עבור כותבי רשת המפתחים או כותבים בעצמם את מרכיבי ממשק המשתמש. פקדי HTML תקניים כבר עונים על אמת-מידה זו להצלחה כאשר משתמשים בהם על פי ההוראות."
+                            }
+                        ],
+                        "references": [
+                            {
+                                "title": "כיצד לענות על 4.1.2",
+                                "url": "http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv"
+                            }, {
+                                "title": "הבנת הנחיה 4.1.2",
+                                "url": "http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

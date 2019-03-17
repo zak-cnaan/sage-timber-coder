@@ -1,13 +1,161 @@
 {% extends "templates/base.twig" %}
 {% block main %}
-    <main id='content' class='hp-jumbo' style="background-image: url( '{{ function('get_the_post_thumbnail_url') }}')">
-        <div class=" mb-0 jumbotron jumbotron-fluid">
+    <main id='content' class='pb-0'>
+        <section id='top-banner'>
             <div class="container">
-                <h1 class="display-4">
-                    {{site.name}}</h1>
-                <div class="lead">
-                    {{ posts[0].content }}</div>
+                <div class='row'>
+                    <div class="col-md-7">
+                        <h1 class="display-4">
+                            {{site.name}}</h1>
+                        <div class="lead">
+                            {{ posts[0].content }}</div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src='{{imagesDir}}/undraw_mobile_marketing_iqbr.svg' alt=''/>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <section class='container services'>
+            <h2 class='text-center'>
+                השירותים שלנו
+            </h2>
+            <div class="row">
+                {% for i in 0..5 %}
+                    <div class="col-md-4 padder">
+                        <div class="service-card h-100">
+                            <div class="icon">
+                                <i aria-hidden="true" class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="services-content">
+                                <h3 class='title'>
+                                    <a href="#">משהו מגניב</a>
+                                </h3>
+                                <p>למטכין נשואי מנורך. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="col-md-4">
+                    <div class="card h-100 border-0"></div>
+                </div>
+            </div>
+        </section>
+        <section class='bg-light'>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h2>דוחות מפורטים לאתר שלך</h2>
+                        <p>
+                            דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק
+                        </p>
+                        <a class='btn btn-primary' href="#">לדוחות מפורטים</a>
+                    </div>
+                    <div class="col-md-5">
+                        <img src='{{imagesDir}}/undraw_mobile_testing_reah.svg' alt=''/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='EndUsers'>
+            <div class="container">
+                <h2 class="text-center">
+                    מי משתמש בשירותים
+                </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="step">
+                            <div class="step__media">
+                                <img src="{{imagesDir}}/undraw_designer_kcp7.svg" class="step__image"></div>
+                                <h3 class='title'>מפתחים</h3>
+                                <p class="step__text">
+                                    דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, טידום בעליק
+                                </p>
+                            </div>
+                        </div>
+                    
+                    <div class="col-md-4">
+                        <div class="step">
+                            <div class="step__media">
+                                <img src="{{imagesDir}}/undraw_responsive_6c8s.svg" class="step__image"></div>
+                                <h3 class='title'>מעצבים</h3>
+                                <p class="step__text">
+                                    דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, טידום בעליק
+                                </p>
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                        <div class="step">
+                            <div class="step__media">
+                                <img src="{{imagesDir}}/undraw_creation_process_vndn.svg" class="step__image"></div>
+                                <h3 class='title'>מפתחים</h3>
+                                <p class="step__text">
+                                    דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, טידום בעליק
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class='incentive bg-light'>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <h2>דוחות מפורטים לאתר שלך</h2>
+                        <p>
+                            דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src='{{imagesDir}}/undraw_browser_stats_704t.svg' alt=''/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='incentive'>
+            <div class="container">
+                <div class="row align-items-center justify-content-center flex-row-reverse">
+                    <div class="col-md-6">
+                        <h2>דוחות מפורטים לאתר שלך</h2>
+                        <p>
+                            דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src='{{imagesDir}}/undraw_JavaScript_Frameworks_x21l.svg' alt=''/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='incentive bg-light'>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <h2>דוחות מפורטים לאתר שלך</h2>
+                        <p>
+                            דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src='{{imagesDir}}/undraw_tabs_jf82.svg' alt=''/>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    {% if (false) %}
+        <main class='hp-jumbo' id='content' style="background-image: url( '{{ function('get_the_post_thumbnail_url') }}')">
+            <div class=" mb-0 jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">
+                        {{site.name}}</h1>
+                    <div class="lead">
+                        {{ posts[0].content }}</div>
+                </div>
+            </div>
+        </main>
+    {% endif %}
 {% endblock %}

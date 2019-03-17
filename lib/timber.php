@@ -37,6 +37,7 @@ class SageTimberTheme extends TimberSite {
         $context['display_sidebar'] = Setup\display_sidebar();
         $context['sidebar_primary'] = Timber::get_widgets('sidebar-primary');
         $context['sidebar_header'] = Timber::get_widgets('sidebar-header');
+        $context['imagesDir'] = get_template_directory_uri() . '/dist/img';
 
         $context['the_title'] = Titles\title();
         $context['brand'] = Setup\brand();

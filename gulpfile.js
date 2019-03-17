@@ -33,22 +33,6 @@ var paths = cfg.paths;
 // Starts watcher. Watcher runs gulp sass task on changes
 
 
-/**
- * Ensures the 'imagemin' task is complete before reloading browsers
- * @verbose
- */
-gulp.task( 'imagemin-watch', ['imagemin'], function( ) {
-  browserSync.reload();
-});
-
-// Run:
-// gulp imagemin
-// Running image optimizing task
-gulp.task( 'imagemin', function() {
-    gulp.src( paths.imgsrc + '/**' )
-    .pipe( imagemin() )
-    .pipe( gulp.dest( paths.img ) );
-});
 
 // Run:
 // gulp cssnano
@@ -113,9 +97,14 @@ var config = {
             src:[
                 'node_modules/jquery/dist/jquery.js',
                 'node_modules/popper.js/dist/umd/popper.js',
-                'node_modules/bootstrap/dist/js/bootstrap.js'
+                'node_modules/bootstrap/dist/js/bootstrap.js',
+                'src/js/scripts.js'
             ],
             dest:'dist/scripts/'
+        },
+        img:{
+            src:'src/img/',
+            dest:'dist/img/'
         }
     }
 };
@@ -136,7 +125,29 @@ var files = {
 
 gulp.task('default', ['sync']);
 
+/**
+ * Ensures the 'imagemin' task is complete before reloading browsers
+ * @verbose
+ */
+// gulp.task( 'imagemin-watch', ['imagemin'], function( ) {
+//     browserSync.reload();
+//   });
+  
+  // Run:
+  // gulp imagemin
+  // Running image optimizing task
+  gulp.task( 'imagemin', function() {
+      gulp.src( paths.imgsrc + '/**' )
+      .pipe( imagemin() )
+      .pipe( gulp.dest( paths.img ) );
+  });
 
+  gulp.task( 'images', function() {
+    gulp.src( config.paths.img.src + '**' )
+    .pipe( imagemin() )
+    .pipe( gulp.dest( config.paths.img.dest ) );
+});
+  
 
 gulp.task('styles', function(){
     gulp.src( files.css.build)
@@ -172,10 +183,14 @@ gulp.task('styles', function(){
       //.pipe(browserSync.reload({stream:true}))
   });
 
-  gulp.task( 'build', ['styles', 'scripts'], function() {} );
+  gulp.task( 'build', ['styles', 'scripts', 'images'], function() {} );
 
+
+  
   gulp.task( 'watch', ['build'], function() {
     gulp.watch( files.css.watch , ['styles'] );
+    gulp.watch( config.paths.img.src + '**', ['images'] );
+    gulp.watch( files.js.build, ['scripts'] );
     //gulp.watch( [paths.dev + '/js/**/*.js', 'js/**/*.js', '!js/theme.js', '!js/theme.min.js'], ['scripts'] );
 
     //Inside the watch task.
