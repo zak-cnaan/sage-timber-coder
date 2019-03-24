@@ -127,7 +127,7 @@ function assets() {
     wp_enqueue_style( 'zak-styles', get_stylesheet_directory_uri() . '/dist/styles/styles.css', array(), $css_version );
     
     $js_version = $theme_version . '.' . filemtime( get_template_directory() . '/dist/scripts/main.min.js' );
-    wp_enqueue_script( 'zak-scripts', get_stylesheet_directory_uri() . '/dist/scripts/main.min.js', array(), $js_version, true );
+    wp_enqueue_script( 'zak-scripts', get_stylesheet_directory_uri() . '/dist/scripts/main.js', array(), $js_version, true );
 
 		/**wp_deregister_script('jquery');
 		wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', false, '3.3.1');

@@ -98,6 +98,7 @@ var config = {
                 'node_modules/jquery/dist/jquery.js',
                 'node_modules/popper.js/dist/umd/popper.js',
                 'node_modules/bootstrap/dist/js/bootstrap.js',
+                'node_modules/jquery-validation/dist/jquery.validate.min.js',
                 'src/js/scripts.js'
             ],
             dest:'dist/scripts/'

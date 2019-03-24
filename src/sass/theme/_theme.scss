@@ -9,8 +9,7 @@ strong {
     font-weight: $font-weight-bold; // Add the correct font weight in Chrome, Edge, and Safari
 }
 
-.business-header h1,
-#Footer {
+.business-header h1{
     direction: ltr;
 }
 
@@ -78,12 +77,7 @@ body {
     }
 }
 
-#Footer {
-    background-color: $dark;
-    color: $light;
-    padding: 0.5rem 0;
 
-}
 
 figure,
 img {
@@ -273,6 +267,18 @@ aside.sidebar {
 }
 
 .home {
+    #incentives{
+        section{
+            background: $light;
+            &:nth-child(2n){
+                background: none;
+                .row{
+                    flex-direction: row-reverse !important;
+                }
+            }
+        }
+    }
+
     #EndUsers{
         .step{
             text-align: center;
@@ -289,7 +295,7 @@ aside.sidebar {
             }
         }
     }
-    main>section {
+    main section {
         padding: 4rem 0;
         &#top-banner{
             // outline: 2px solid rgba($primary, 1);
@@ -332,4 +338,28 @@ aside.sidebar {
             }
         }
     }
+}
+
+
+#Footer {
+    // background-color: $dark;
+    // color: $light;
+   
+#bottom-contact{
+    background: $primary;
+    color:#fff;
+    padding: 2rem 0;
+
+    label.error{
+        color:$dark;
+        font-weight: bold;
+    }
+}
+#credits{
+    background: $dark;
+    color:#fff;
+    padding: 1rem 0;
+    box-shadow: 0px 0px 20px #fff;
+}
+
 }

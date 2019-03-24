@@ -1,7 +1,83 @@
-<footer id="Footer" class="site-footer navbar">
+<footer id="Footer">
+    <div id="bottom-contact" class="alert-primary">
+        <div class="container">
+        <h2>פנו למומחה</h2>
+        <p class='mb-4'>
+            לקבלת ייעוץ ראשוני ללא תשלום, נא מלאו טופס זה.<br>
+            שדות המסומנים ב-* הינם חובה למילוי.
+
+        </p>
+            <form id='myform' action="/?page_id=26#wpcf7-f4-o1" method="post" novalidate="novalidate">
+                
+                <div style="display: none;">
+<input type="hidden" name="_wpcf7" value="4">
+<input type="hidden" name="_wpcf7_version" value="5.1.1">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="g-recaptcha-response" value="">
+<input type="hidden" name="subject" value="ליד מהאתר">
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+    
+                    <label class='sr-only' for="nameInput">* שם מלא</label>
+                    <input aria-required="true" type="text" name="fullName" class="form-control" id="nameInput" placeholder='* שם מלא'>
+                </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+                    <label class='sr-only' for="emailInput">* דואר אלקטרוני</label>
+                    <input aria-required="true" type="email" name="email" class="form-control" id="emailInput" placeholder='* דואר אלקטרוני'>
+                </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+                    <label class='sr-only' for="phoneInput">מספר טלפון</label>
+                    <input type="tel" name="phone" class="form-control" id="phoneInput" placeholder='מספר טלפון'>
+                </div>
+
+               
+    </div>
+
+    <div class="col-md-6">
+     <div class="form-group">
+                    <label class='sr-only' for="urlInput">כתובת אתר</label>
+                    <input type="url" name="urlInput" class="form-control" id="urlInput" placeholder='כתובת אתר'>
+                </div>
+    </div>
+
+    </div>
+                
+
+              
+
+
+                
+
+                <div class="form-group">
+                    <label class='sr-only' for="messegeInput">הודעה</label>
+                    <textarea name="messege" class="form-control" id="messegeInput" placeholder='הודעה'></textarea>
+                </div>
+                <div class="d-flex justify-content-between">
+                <span id="formMsg" aria-live="polite"></span>
+                <button type="submit" class="btn btn-dark">שלח טופס</button>
+                </div>
+            </form>
+            
+            </div>
+    </div>
+    <div id="credits">
     <div class="container">
         &copy; {{site.name}}
         {{ "now"|date("Y") }}. {{site.description}}
     </div>
-    
+    </div>
 </footer>
+
